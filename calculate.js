@@ -1,7 +1,3 @@
-const num1 = process.argv[2]
-const operator = process.argv[3]
-const num2 = process.argv[4] 
-
 function calculate(num1, num2, operator) {
     const convertNum1 = Number(num1);
     const convertNum2 = Number(num2);
@@ -11,14 +7,12 @@ function calculate(num1, num2, operator) {
         result = convertNum1 + convertNum2;
         console.log(result);
         return result;
-        break;
     
         case '-':
         case 'minus':
         result = convertNum1 - convertNum2;
         console.log(result);
         return result;
-        break;
     
         case 'x':
         case 'X':
@@ -26,13 +20,11 @@ function calculate(num1, num2, operator) {
         result = convertNum1 * convertNum2;
         console.log(result);
         return result;
-        break;
     
         case '/':
         result = convertNum1 / convertNum2;
         console.log(result);
         return result;
-        break;
 
         case '%':
         case 'mod':
@@ -40,13 +32,10 @@ function calculate(num1, num2, operator) {
         result = convertNum1 % convertNum2;
         console.log(result);
         return result;
-        break;
 
         default: return 'Sorry, that\'s not a mathematical operation!'
 
     }
 }
-
-calculate(num1, num2, operator);
 
 module.exports = calculate;
