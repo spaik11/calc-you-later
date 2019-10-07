@@ -10,12 +10,14 @@ function calculate(num1, num2, operator) {
         case 'plus':
         result = convertNum1 + convertNum2;
         console.log(result);
+        return result;
         break;
     
         case '-':
         case 'minus':
         result = convertNum1 - convertNum2;
         console.log(result);
+        return result;
         break;
     
         case 'x':
@@ -23,11 +25,13 @@ function calculate(num1, num2, operator) {
         case 'times':
         result = convertNum1 * convertNum2;
         console.log(result);
+        return result;
         break;
     
         case '/':
         result = convertNum1 / convertNum2;
         console.log(result);
+        return result;
         break;
 
         case '%':
@@ -35,6 +39,7 @@ function calculate(num1, num2, operator) {
         case 'modulus':
         result = convertNum1 % convertNum2;
         console.log(result);
+        return result;
         break;
 
         default: return 'Sorry, that\'s not a mathematical operation!'
